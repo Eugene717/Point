@@ -87,6 +87,7 @@ std::istream& operator>>(std::istream& is, Point& point)
 		}
 
 		is >> point.m_y;
+		--point.m_y;
 
 		if (is.fail())
 		{
